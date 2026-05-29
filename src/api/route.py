@@ -33,7 +33,7 @@ from src.api.schemas import (RolCreate,RolResponse,UsuarioCreate,UsuarioResponse
 #api route que agrupa las rutas
 #Asigna un versionamiento de nuestra API (en el futuro podemos utilizar por ejemplo v2 que seria la version 2 del api)
 
-router = APIRouter(prefix="/API/V1")
+router = APIRouter()
 
 #Rol 
 @router.get("/roles", response_model=List[RolResponse], tags=["Roles"])
